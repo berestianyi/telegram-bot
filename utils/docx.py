@@ -1,7 +1,7 @@
 from docx import Document
 from docx.shared import Pt
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
-from function.utils import name_split, name_cut, month_names, \
+from utils.utils import name_split, name_cut, month_names, \
     car_data, car_quantity, today_date, date_to_dict, is_man_for_fop, is_man_for_tov, is_woman_for_tov
 
 

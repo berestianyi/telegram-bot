@@ -5,8 +5,8 @@ from aiogram.fsm.context import FSMContext
 from handlers.docx.user import DocxData
 from keyboards.docx_kb import expire_date_kb
 from keyboards.client_kb import menu_kb
-from function.utils import year_from_today, end_of_year
-from function.docx import roland_doc, royal_doc
+from utils.utils import year_from_today, end_of_year
+from utils.docx import roland_doc, royal_doc
 
 docx_router = Router()
 

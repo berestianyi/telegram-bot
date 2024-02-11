@@ -6,7 +6,7 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from keyboards.docx_kb import docx_start_kb, docx_foo_kb, atp_kb
-from function.atp_file_extraction import extraction_of_tov_name, is_tov, pdf_extraction
+from utils.atp_file_extraction import extraction_of_tov_name, is_tov, pdf_extraction
 
 
 docx_router = Router()
