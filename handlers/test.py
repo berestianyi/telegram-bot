@@ -16,7 +16,8 @@
 #     await FSMtest.name.set()
 #     await message.reply('Напиши имя человека')
 #
-#
+#git help
+
 # @dp.message_handler(content_types=['text'], state=FSMtest.name)
 # async def load_name(message: Message, state: FSMContext):
 #     async with state.proxy() as data:
