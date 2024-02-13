@@ -6,7 +6,8 @@ from handlers.docx.user import DocxData
 from keyboards.docx_kb import expire_date_kb
 from keyboards.client_kb import menu_kb
 from utils.utils import year_from_today, end_of_year
-from utils.docx import roland_doc, royal_doc
+from utils.templates.royal import royal_doc
+from utils.templates.roland import roland_doc
 
 docx_router = Router()
 

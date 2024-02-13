@@ -122,3 +122,26 @@ def is_woman_for_tov(full_name_info, path):
                 return True
 
     return False
+
+
+def is_fop(code):
+    if len(code) == 10:
+        return True
+    else:
+        return False
+
+
+def adjectives_fop(code):
+    if is_man_for_fop(code):
+        return "який"
+    else:
+        return "яка"
+
+
+def adjectives_tov(name):
+    if is_man_for_tov(name, 'files/man_names.txt'):
+        return "який"
+    elif is_woman_for_tov(name, 'files/woman_names.txt'):
+        return "яка"
+    else:
+        return "що"
