@@ -17,9 +17,11 @@ async def main() -> None:
     )
 
     await bot.delete_webhook(drop_pending_updates=True)
-    await dp.start_polling(bot)
+    await dp.start_polling(bot, skip_updates=True)
 
 
 if __name__ == "__main__":
+    loop = asyncio.get_event_loop()
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     asyncio.run(main())
+    loop.run_forever()
